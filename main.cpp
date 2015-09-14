@@ -121,8 +121,8 @@ int countFuncLOC(fstream &file, FUNCDATA *funcDataPtr)
 					break;
 			
                                         
-			case ' ':				// skip the character if it is just white space
-				break;
+			
+                                        
 			case '{':
 				iNumBraceLt++;
 				if (tmpString.find('}') == tmpString.npos)        // if there's no } in the same line, count the line as a LOC
