@@ -119,12 +119,8 @@ int countFuncLOC(fstream &file, FUNCDATA *funcDataPtr)
 						i++;
 					}
 					break;
-			case '*':				// if currently in a block comment it checks to see if it is closing the comment
-				if (bBlockComment == false)
-					break;
-				if (i < tmpString.length() - 1)
-					if (tmpString[i + 1] == '/')
-						bBlockComment = false;
+			
+                                        
 			case ' ':				// skip the character if it is just white space
 				break;
 			case '{':
